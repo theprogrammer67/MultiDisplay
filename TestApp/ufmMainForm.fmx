@@ -1,0 +1,148 @@
+object frmDeviceSettings: TfrmDeviceSettings
+  Left = 0
+  Top = 0
+  ActiveControl = btnOK
+  Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099' '#1084#1086#1085#1080#1090#1086#1088#1072
+  ClientHeight = 581
+  ClientWidth = 505
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object pnlContent: TPanel
+    Align = Contents
+    Size.Width = 505.000000000000000000
+    Size.Height = 581.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object pnlMain: TPanel
+      Align = Center
+      Padding.Left = 10.000000000000000000
+      Padding.Top = 10.000000000000000000
+      Padding.Right = 10.000000000000000000
+      Padding.Bottom = 10.000000000000000000
+      Size.Width = 429.000000000000000000
+      Size.Height = 513.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lytMain: TLayout
+        Align = Client
+        Size.Width = 409.000000000000000000
+        Size.Height = 493.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object cbbMonitor: TComboBox
+          Align = Top
+          Margins.Bottom = 16.000000000000000000
+          Position.Y = 104.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnChange = cbbMonitorChange
+        end
+        object cbbOrientation: TComboBox
+          Align = Top
+          Margins.Bottom = 16.000000000000000000
+          Position.Y = 264.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnChange = cbbOrientationChange
+        end
+        object cbbResolution: TComboBox
+          Align = Top
+          Margins.Bottom = 16.000000000000000000
+          Position.Y = 184.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          OnChange = cbbResolutionChange
+        end
+        object chkMonitor: TCheckBox
+          Align = Top
+          StyledSettings = [Family, Style, FontColor]
+          Position.Y = 72.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = #1052#1086#1085#1080#1090#1086#1088
+          TextSettings.Font.Size = 22.000000000000000000
+          OnChange = chkMonitorChange
+        end
+        object chkOrientation: TCheckBox
+          Align = Top
+          StyledSettings = [Family, Style, FontColor]
+          Position.Y = 232.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = #1054#1088#1080#1077#1085#1090#1072#1094#1080#1103' '#1101#1082#1088#1072#1085#1072
+          TextSettings.Font.Size = 22.000000000000000000
+        end
+        object chkResolution: TCheckBox
+          Align = Top
+          StyledSettings = [Family, Style, FontColor]
+          Position.Y = 152.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = #1056#1072#1079#1088#1077#1096#1077#1085#1080#1077' '#1101#1082#1088#1072#1085#1072
+          TextSettings.Font.Size = 22.000000000000000000
+        end
+        object lblCaption: TLabel
+          Align = MostTop
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Bottom = 32.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 28.000000000000000000
+          TextSettings.HorzAlign = Center
+          TextSettings.WordWrap = False
+          Text = #1055#1072#1088#1072#1084#1077#1090#1088#1099' '#1084#1086#1085#1080#1090#1086#1088#1072
+          TabOrder = 13
+        end
+        object btnOK: TButton
+          Align = Bottom
+          StyledSettings = [Family, Style, FontColor]
+          ModalResult = 1
+          Position.Y = 445.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'buttonstyle'
+          TabOrder = 14
+          Text = #1055#1088#1080#1084#1077#1085#1080#1090#1100
+          TextSettings.Font.Size = 22.000000000000000000
+          OnClick = btnOKClick
+        end
+        object btnCancel: TButton
+          Align = Bottom
+          Cancel = True
+          StyledSettings = [Family, Style, FontColor]
+          ModalResult = 2
+          Margins.Bottom = 16.000000000000000000
+          Position.Y = 381.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toolbuttonmiddle'
+          TabOrder = 15
+          Text = #1047#1072#1082#1088#1099#1090#1100
+          TextSettings.Font.Size = 22.000000000000000000
+          OnClick = btnCancelClick
+        end
+      end
+    end
+  end
+end
